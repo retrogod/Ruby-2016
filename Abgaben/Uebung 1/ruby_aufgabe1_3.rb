@@ -9,5 +9,18 @@ def tokenisiere_string(string)
   for i < array_length
     words[i] += "\n"
   end
-  return hash
+  return words
+end
+
+##Musterlösung
+def tokenisiere_string2(input)
+  return input.split
+end
+
+##Oder
+
+def tokenisiere_string3(input)
+  output = ""
+  input.split.each{|tokens| output+="#{tokens}\n"}
+  return output
 end
