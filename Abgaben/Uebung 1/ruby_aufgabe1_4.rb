@@ -16,5 +16,5 @@ end
 #Musterlösung
 def string_to_hash2(input)
   output = Hash.new(0)
-  input.each{|token| output[token] += 1}
+  input.split.each{|token| output[token] += 1}
 end
