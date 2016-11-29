@@ -19,11 +19,15 @@ class Dokument
   
   
   #Anfang Aufgabe 2
-  #def kontext
-  
-  #end
+  def kontext(input)
+    ainhalt = $inhalt.split
+	res = "#{ainhalt.fetch(ainhalt.index(input)-1)}" + " >> " + "#{ainhalt.fetch(ainhalt.index(input))}" + " << " + "#{ainhalt.fetch(ainhalt.index(input)+1)}"
+    puts res
+	return res
+  end
 
 end
 
 testdoc = Dokument.new("Die Der Das Die Der Das Die Der Das Die Der Das Die Der Das Die Der Das Die Der Das")
 testdoc.schreibweise("Die")
+testdoc.kontext("Das")
