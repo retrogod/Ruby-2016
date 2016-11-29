@@ -38,5 +38,5 @@ end
 ##Oder in Kurz
 
 def passwortTester3(input)
-  inout.length < 8 ? 'zu kurz' : input.gsub(/./, "*")
+  input.length < 8 ? 'zu kurz' : input.gsub(/./, "*")
 end
